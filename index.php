@@ -52,6 +52,7 @@ if (isset($_POST['envioForm'])) {
             <a class="nav-link js-scroll-trigger" href="#services">SERVIÇOS</a>
           </li>
           <li class="nav-item">
+            
             <a class="nav-link js-scroll-trigger" href="#portfolio">INTERFACES</a>
           </li>
           <li class="nav-item">
@@ -340,7 +341,7 @@ if (isset($_POST['envioForm'])) {
           <span><? if (isset($UsuarioID)) { print "Usuário cadastrado com sucesso 
             (ID ".$UsuarioID.")"; } else { print "Erro!"; } ?></span>
             <!--SPAM-->
-            <form novalidate="novalidate"  method="POST" action="./processa.php">
+            <form   method="POST" action="./processa.php">
               <input type='hidden' name='envioForm' value='true'>
               <div class="row">
                 <div class="col-md-6">
@@ -353,7 +354,7 @@ if (isset($_POST['envioForm'])) {
                     <p class="help-block text-danger"></p>
                   </div>
                   <div class="form-group">
-                    <input class="form-control" id="phone" name="telefone" type="tel" placeholder="Seu Telefone *"  >
+                    <input class="form-control" id="phone" name="telefone" type="tel" placeholder="Seu Telefone (apenas numero) *" maxlength="11"  >
                     <p class="help-block text-danger"></p>
                   </div>
                 </div>
@@ -407,6 +408,7 @@ if (isset($_POST['envioForm'])) {
               </li> -->
             <li class="list-inline-item">
               <a href="#">HOME</a>
+              
             </li>
           </ul>
         </div>

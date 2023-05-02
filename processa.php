@@ -20,7 +20,7 @@ $UsuarioMensagem  = $_POST['mensagem'];
 
 $qUsuario = "   INSERT INTO ajuda (nome, email, telefone, mensagem, created) 
                 VALUES('$UsuarioNome','$UsuarioEmail', '$UsuarioTelefone','$UsuarioMensagem', NOW())";
-/*
+
 if (!($rUsuario = mysqli_query($conn, $qUsuario))){
     print "Erro ao executar cadastro;";
 } else {
@@ -31,7 +31,6 @@ if (!($rUsuario = mysqli_query($conn, $qUsuario))){
     print "<br>E-mail: ".$UsuarioEmail;
     print "<br>ID: ".$UsuarioID;
 }
-*/
 /*
 if($UsuarioID = mysqli_insert_id($conn)) {
 print "OK insert";
